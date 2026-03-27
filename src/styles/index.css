@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import './tailwind.css';
+@import './theme.css';
+
+/* Using Bebas Neue for Bronte-like bold display headings */
+/* Using Inter for Glancyr-like clean, modern body text */
+
+:root {
+  --font-heading: 'Bebas Neue', 'Impact', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
