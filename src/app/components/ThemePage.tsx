@@ -276,7 +276,18 @@ interface Theme {
   youtubeVideoId: string;
   artworkUrl: string;
   currentPrompt: string;
+  prompts?: string[];
   currentFollowUpQuestions?: {
+    'follow-up'?: string;
+    deeper?: string;
+    'archive-response'?: string;
+    perspective?: string;
+    'time-shift'?: string;
+    archiveResponse?: string;
+    conversationReply?: string;
+    reflectionChain?: string;
+  };
+  followUpQuestions?: {
     'follow-up'?: string;
     deeper?: string;
     'archive-response'?: string;
@@ -330,6 +341,9 @@ interface Theme {
   musicLibraryLink?: string;
   musicSectionButtonText?: string;
   musicSectionCaption?: string;
+  rewardSectionDescription?: string;
+  featuredReflections?: Array<{ content: string; author: string }>;
+  footerLinks?: Array<{ label: string; url: string }>;
 }
 
 interface ThemePageProps {
