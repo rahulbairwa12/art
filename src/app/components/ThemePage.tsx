@@ -375,7 +375,7 @@ const FloatingPuzzlePiece = ({ delay = 0, color = "#F59E0B" }: { delay?: number;
 );
 
 // Floating grade letter
-const FloatingGrade = ({ grade, delay = 0, startX = 0 }: { grade: string; delay?: number; startX?: number }) => (
+const FloatingGrade = ({ grade, delay = 0, startX = 0 }: { grade: string; delay?: number; startX?: string | number }) => (
   <motion.div
     className="absolute text-4xl md:text-6xl font-black opacity-15 text-white pointer-events-none"
     initial={{ y: typeof window !== 'undefined' ? window.innerHeight + 100 : 800, x: startX, rotate: 0 }}
@@ -418,7 +418,7 @@ const PaperAirplane = ({ delay = 0 }: { delay?: number }) => (
 );
 
 // Gold star
-const GoldStar = ({ delay = 0, startX = 0, startY = 0 }: { delay?: number; startX?: number; startY?: number }) => (
+const GoldStar = ({ delay = 0, startX = 0, startY = 0 }: { delay?: number; startX?: string | number; startY?: number }) => (
   <motion.div
     className="absolute text-2xl md:text-4xl opacity-25 pointer-events-none"
     initial={{ x: startX, y: startY, scale: 0, rotate: 0 }}
